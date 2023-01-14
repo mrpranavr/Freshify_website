@@ -1,4 +1,4 @@
-import { fresh, organic  } from "../assets"
+import { fresh, organic, twoMilk, fourMilk, milkChicken  } from "../assets"
 
 
 export const navLinks = [
@@ -39,4 +39,28 @@ export const benefits = [
         title: "Fast Delivery",
         content: "We make sure you get your freshness right on time, every time. No delays here !"
     },
+]
+
+export const subscriptions = [
+    {
+        id: 'subsription-1',
+        name: 'Weekly milk pack',
+        amount: '₹ 825',
+        days: 15,
+        image: twoMilk
+    },
+    {
+        id: 'subsription-2',
+        name: 'Monthly milk pack',
+        amount: '₹ 1560',
+        days: 31,
+        image: fourMilk
+    },
+    {
+        id: 'subsription-3',
+        name: 'Weekly Combo pack',
+        amount: '₹ 825',
+        days: 7,
+        image: milkChicken
+    }
 ]
