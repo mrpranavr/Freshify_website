@@ -4,3 +4,65 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --card-shadow: -8px 8px 16px 8px rgba(0, 0, 0, 0.15);
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+.text-gradient__green {
+    background: linear-gradient(96.71deg, #a7c957 9.15%, #386641 43.88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.text-gradient__orange {
+    background: linear-gradient(94.16deg, #ed8623 20.98%, #ee6055 73.48%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.bg-green-gradient {
+    background: linear-gradient(96.68deg, #6a994e 1.81%, #386641 99.65%);
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.subscription-card {
+  box-shadow: var(--card-shadow);
+}
+
+.subscription-card:last-child {
+  margin-right: 0px;
+}
