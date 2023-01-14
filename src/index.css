@@ -13,7 +13,7 @@
 }
 
 .text-gradient__green {
-    background: linear-gradient(96.71deg, #a7c957 9.15%, #386641 43.88%);
+    background: linear-gradient(96.71deg, #a7c957 19.15%, #386641 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -21,7 +21,7 @@
 }
 
 .text-gradient__orange {
-    background: linear-gradient(94.16deg, #ed8623 20.98%, #ee6055 73.48%);
+    background: linear-gradient(94.16deg, #e79241 20.98%, #df6d65 73.48%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -29,40 +29,77 @@
 }
 
 .bg-green-gradient {
-    background: linear-gradient(96.68deg, #6a994e 1.81%, #386641 99.65%);
+    background: linear-gradient(93.32deg, #386641 3.17%, #143601 105.6%);
+}
+
+.button-gradient {
+    background: linear-gradient(
+        97.85deg,
+        #31643b -1.08%,
+        #1a4301 28.04%,
+        #143601 93.05%
+    );
 }
 
 .sidebar {
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+        both;
+    animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.sidebar-close {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(-200px);
+        transform: translateY(-200px);
+    }
+    100% {
+        -webkit-transform: translateY(70px);
+        transform: translateY(70px);
+    }
+}
+
+@keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(-200px);
+        transform: translateY(-200px);
+    }
+    100% {
+        -webkit-transform: translateY(70px);
+        transform: translateY(70px);
+    }
 }
 
 @-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
+    0% {
+        -webkit-transform: translateY(70px);
+        transform: translateY(70px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
 
 @keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
+    0% {
+        -webkit-transform: translateY(70px);
+        transform: translateY(70px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
 
 .subscription-card {
-  box-shadow: var(--card-shadow);
+    box-shadow: var(--card-shadow);
 }
 
 .subscription-card:last-child {
-  margin-right: 0px;
+    margin-right: 0px;
 }

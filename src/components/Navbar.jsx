@@ -11,12 +11,13 @@ const Navbar = ({toggleNavBar, menuToggle}) => {
             <img
                 src={logo}
                 alt="Foodify"
-                className="w-[124px] h-[45px] object-contain "
+                className="ss:w-[124px] ss:h-[45px] w-[100px] object-contain z-[5]"
             />
 
             <ul className="list-none sm:flex hidden items-center justify-end flex-1">
                 {navLinks.map((nav, index) => (
                     <li
+                        key={nav.id}
                         className={`font-poppins font-semibold cursor-pointer text-[16px] text-textBlack ${
                             index !== navLinks.length - 1 ? "mr-10" : "mr-0"
                         }`}

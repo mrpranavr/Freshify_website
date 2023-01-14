@@ -16,6 +16,7 @@ import threeMilk from './threeMilk.png'
 import twoMilk from './twoMilk.png'
 import close from './close.svg'
 import menu from './menu.svg'
+import star from './star.svg'
 
 export {
     customerImg,
@@ -35,5 +36,6 @@ export {
     threeMilk,
     twoMilk,
     close,
-    menu
+    menu,
+    star
 }

@@ -1,33 +1,23 @@
 import React from "react";
 import "./index.css";
 import styles from './style'
-import { navLinks } from "./constants";
-import { useState } from "react";
-
-
 import {
-    NavBar,
     Hero,
     Benefits,
     Downloads,
     Subscriptions,
     CTA,
     Contact,
-    Sidebar
+    ToggleNavbar
 } from "./components/index";
 
 function App() {
 
-    const [toggle, setToggle] = useState(false)
+    console.log('App build') // Comment this during deployment
 
     return (
         <div className="bg-primary w-full overflow-hidden">
-            <Sidebar toggleSideBar={toggle}/>
-            <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-              <div className={`${styles.boxWidth}`} >
-                <NavBar toggleNavBar={setToggle} menuToggle={toggle} />
-              </div>
-            </div>
+            <ToggleNavbar />
 
             <div className={`${styles.flexStart} bg-primary`}>
               <div className={`${styles.boxWidth}`}>
