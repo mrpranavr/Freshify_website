@@ -7,8 +7,8 @@ const Hero = () => {
   return (
     <section id='home' className={`flex lg:flex-row flex-col ${styles.paddingY}`} >
 
-      <div className={`xl:flex-[1.25] flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
-        <h1 className='font-poppins font-bold ss:text-[72px] xs:text-[55px] text-[42px]' >
+      <div className={`xl:flex-[1.25] flex-1 ${styles.flexStart} flex-col xl:px-0 sm:pl-16 sm:pr-0 px-6 `}>
+        <h1 className='font-poppins font-bold ss:text-[72px] xs:text-[55px] text-[42px] ' >
           Never compromise <br className='sm:block hidden' />
           on freshness.<br/>{" "}
           <span className='text-gradient__green' >Go </span>
