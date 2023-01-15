@@ -6,12 +6,14 @@
   "scripts": {
     "dev": "vite --host --port 8080",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy":"vercel --prod"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-intersection-observer": "^9.4.1"
+    "react-intersection-observer": "^9.4.1",
+    "vercel": "^28.12.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
