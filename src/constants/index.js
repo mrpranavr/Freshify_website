@@ -15,8 +15,8 @@ export const navLinks = [
         title: 'Subscriptions'
     },
     {
-        id: 'contact',
-        title: 'Contact Us'
+        id: 'go_shopping',
+        title: 'Go Shopping'
     },
 ]
 

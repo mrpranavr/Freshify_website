@@ -6,7 +6,7 @@ import styles, { layout } from "../style";
 
 const BenefitCard = ({icon, title, content, index}) => {
   return (
-    <div className={`flex ss:min-w-[526px] max-w-[700px] items-center flex-row p-4 rounded-[20px] ${index !== benefits.length - 1 ? 'mb-6' : 'mb-0'}`}>
+    <div className={`flex ss:min-w-[526px] transition-all ease-in-out hover:scale-105 max-w-[700px] items-center flex-row p-4 rounded-[20px] ${index !== benefits.length - 1 ? 'mb-6' : 'mb-0'}`}>
       {/* <div className={`w-[75px] h-[75px] rounded-full ${styles.flexCenter}`}> */}
         <img src={icon} alt='icon' className="object-contain" />
       {/* </div> */}

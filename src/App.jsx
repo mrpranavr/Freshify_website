@@ -7,8 +7,8 @@ import {
     Downloads,
     Subscriptions,
     CTA,
-    Contact,
-    ToggleNavbar
+    ToggleNavbar,
+    Footer
 } from "./components/index";
 
 function App() {
@@ -31,9 +31,10 @@ function App() {
                 <Downloads />
                 <Subscriptions />
                 <CTA />
-                <Contact />
+                <Footer />
               </div>
             </div>
+
         </div>
     );
 }
