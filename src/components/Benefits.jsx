@@ -2,6 +2,7 @@ import React from "react";
 import { benefits } from "../constants";
 import Button from "./Button";
 import styles, { layout } from "../style";
+import { InView } from "react-intersection-observer";
 
 
 const BenefitCard = ({icon, title, content, index}) => {
@@ -20,25 +21,33 @@ const BenefitCard = ({icon, title, content, index}) => {
 
 const Benefits = () => {
     return (
-        <section id="about" className={layout.section}>
-            <div className={layout.sectionInfo}>
-                <h1 className={styles.heading2}>
-                    You make a choice, <br className="sm:block hidden" />
-                    and we do the shopping.
-                </h1>
-                <p className={`${styles.paragraph} max-w-[470px] mt-[20px]`}>
-                    With the right service, we can provide fresh, organic meat
-                    and diary products right to your doorsteps. We never
-                    compromise on quality.
-                </p>
-                <Button styles='mt-10 button-gradient' content='Get Started' />
-            </div>
+          <section  id="about" className={layout.section}>
+            <InView threshold={0.2} triggerOnce={true}>
+              {({ref, inView}) => (
+                <div ref={ref} className={`${layout.sectionInfo} ${inView ? 'isVisible delay-1' : 'notVisible'}`}>
+                  <h1 className={styles.heading2}>
+                      You make a choice, <br className="sm:block hidden" />
+                      and we do the shopping.
+                  </h1>
+                  <p className={`${styles.paragraph} max-w-[470px] mt-[20px]`}>
+                      With the right service, we can provide fresh, organic meat
+                      and diary products right to your doorsteps. We never
+                      compromise on quality.
+                  </p>
+                  <Button styles='mt-10 button-gradient' content='Get Started' />
+                </div>
+              )}
+            </InView>
 
-            <div className={`flex-1 flex ${styles.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative flex-col`}>
-              {benefits.map((benefit, index) => (
-                <BenefitCard key={benefit.id} {...benefit} index={index} />
-              ))}
-            </div>
+            <InView threshold={0.2} triggerOnce={true}>
+              {({ref, inView}) => (
+                <div ref={ref} className={`${inView ? 'isVisible delay-1' : 'notVisible'} flex-1 flex ${styles.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative flex-col`}>
+                  {benefits.map((benefit, index) => (
+                    <BenefitCard key={benefit.id} {...benefit} index={index} />
+                  ))}
+                </div>
+              )}
+            </InView>
         </section>
     );
 };
