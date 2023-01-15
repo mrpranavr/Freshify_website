@@ -12,8 +12,8 @@ const ItemCard = ({ name, image, days, amount, index }) => {
             <div className="mt-[15px]">
                 <Button styles="bg-lightRed py-3" content="Subscribe" />
             </div>
-            <a href='know_more' >
-                <p className="font-poppins font-normal text-[12px] mt-[15px] ">
+            <a href='know_more' className="mt-[15px]" >
+                <p className="font-poppins font-normal text-[12px]  ">
                     Know more
                 </p>
             </a>
