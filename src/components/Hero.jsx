@@ -15,7 +15,7 @@ const Hero = () => {
           <span className='text-gradient__orange' >Freshify !</span>
         </h1>
         
-        <Button styles='ss:mt-[60px] mt-10' />
+        <Button styles='ss:mt-[60px] mt-10 button-gradient' content='Get Started' />
 
         <div className={`ss:mt-[87px] mt-10 flex flex-row ss:gap-[64px] gap-[50px] items-center justify-start`} >
           <p className='font-poppins font-medium ss:text-[20px] text-[16px]' >Follow us</p>

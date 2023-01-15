@@ -97,9 +97,7 @@
 }
 
 .subscription-card {
+    background: white;
     box-shadow: var(--card-shadow);
 }
 
-.subscription-card:last-child {
-    margin-right: 0px;
-}

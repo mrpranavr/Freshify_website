@@ -31,7 +31,7 @@ const Benefits = () => {
                     and diary products right to your doorsteps. We never
                     compromise on quality.
                 </p>
-                <Button styles='mt-10' />
+                <Button styles='mt-10 button-gradient' content='Get Started' />
             </div>
 
             <div className={`flex-1 flex ${styles.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative flex-col`}>

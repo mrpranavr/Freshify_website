@@ -1,9 +1,24 @@
-import React from 'react'
+import React from "react";
+import Button from "./Button";
 
-const ItemCard = () => {
-  return (
-    <div>ItemCard</div>
-  )
-}
+const ItemCard = ({ name, image, days, amount, index }) => {
+    return (
+        <div className="subscription-card flex justify-between items-center flex-col px-5 min-w-[325px] min-h-[404px] py-5 rounded-[20px] max-w-[325px] my-2">
+            <img src={image} alt="image" className="h-[212px]" />
+            <p className="font-poppins font-bold text-[16px]">{name}</p>
+            <p className="font-poppins mt-[5px] font-bold text-textGreen text-[25px]">
+                {amount}
+            </p>
+            <div className="mt-[15px]">
+                <Button styles="bg-lightRed py-3" content="Subscribe" />
+            </div>
+            <a href='know_more' >
+                <p className="font-poppins font-normal text-[12px] mt-[15px] ">
+                    Know more
+                </p>
+            </a>
+        </div>
+    );
+};
 
-export default ItemCard
+export default ItemCard;
